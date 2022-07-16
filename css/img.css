@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    color: white;
+    font-weight: 300;
+}
+
+.wrapper {
+    background: #ee9ca7;
+    background: -webkit-linear-gradient(top left, #ee9ca7 0%, #ee9ca7 100%);
+    background: linear-gradient(to bottom right, #ee9ca7 0%, #ee9ca7 100%);
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.wrapper.form-success .container h1 {
+    -webkit-transform: translateY(85px);
+    -ms-transform: translateY(85px);
+    transform: translateY(85px);
+}
+
+.bg-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    bottom: -160px;
+    -webkit-animation: square 30s infinite;
+    animation: square 30s infinite;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.bg-bubbles li:nth-child(1) {
+    left: 9%;
+	width: 81px;
+	height: 81px;
+	-webkit-animation-delay: 3s;
+			animation-delay: 3s;
+	-webkit-animation-duration: 21s;
+			animation-duration: 21s;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-bubbles li:nth-child(2) {
+    left: 51%;
+    width: 56px;
+    height: 56px;
+    -webkit-animation-delay: 7s;
+			animation-delay: 7s;
+    -webkit-animation-duration: 13s;
+			animation-duration: 13s;
+}
+
+.bg-bubbles li:nth-child(3) {
+    left: 43%;
+    width: 67px;
+    height: 67px;
+	webkit-animation-delay: 5s;
+		   animation-delay: 5s;
+	-webkit-animation-duration: 23s;
+			animation-duration: 23s;
+}
+
+.bg-bubbles li:nth-child(4) {
+    left: 76%;
+	width: 34px;
+	height: 34px;
+	-webkit-animation-delay: 6s;
+			animation-delay: 6s;
+	-webkit-animation-duration: 37s;
+			animation-duration: 37s;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-bubbles li:nth-child(5) {
+    left: 34%;
+    width: 23px;
+    height: 23px;
+    -webkit-animation-delay: 7s;
+			animation-delay: 7s;
+	-webkit-animation-duration: 23s;
+			animation-duration: 23s;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-bubbles li:nth-child(6) {
+    left: 52%;
+    width: 21px;
+    height: 21px;
+    -webkit-animation-delay: 4s;
+			animation-delay: 4s;
+    -webkit-animation-duration: 27s;
+			animation-duration: 27s;
+}
+
+bg-bubbles li:nth-child(7) {
+  left: 11%;
+  width: 56px;
+  height: 56px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 23s;
+          animation-duration: 23s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+bg-bubbles li:nth-child(8) {
+  left: 47%;
+  width: 56px;
+  height: 56px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
+}
+
+@-webkit-keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-900px) rotate(600deg);
+        transform: translateY(-900px) rotate(600deg);
+    }
+}
+
+@keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-900px) rotate(600deg);
+        transform: translateY(-900px) rotate(600deg);
+    }
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.img-ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container .img-li {
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 10px solid #fff;
+    border-radius: 4px;
+}
+
+.container img {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+.begin {
+    position: fixed;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    z-index: 666;
+    height: 100%;
+    font-size: 30px;
+    color: #fff;
+}
